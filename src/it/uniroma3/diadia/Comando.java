@@ -21,6 +21,7 @@ public class Comando {
     private String parametro;
 
     public Comando(String istruzione) {
+		@SuppressWarnings("resource")
 		Scanner scannerDiParole = new Scanner(istruzione);
 
 		// prima parola: nome del comando
